@@ -1,6 +1,6 @@
 --[[ Script cleans all local files and syncs with github repository]]--
 
-local gUser = "literallyAdrina"
+local gUser = "ejayjock"
 local gRepo = "turtle-aj"
 local gBranch = "master"
 local gPath=""
