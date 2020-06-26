@@ -1,4 +1,5 @@
---[[ Script cleans all local files and syncs with github repository]]--
+--[[ Rev02
+Script cleans all local files and syncs with github repository]]--
 
 local gUser = "ejayjock"
 local gRepo = "turtle-aj"
@@ -19,7 +20,7 @@ local blackList = [[
 @blacklistedfile
 ]]
 
-local title = "Github Repo Downloader"
+local title = "Github Repo Downloader "
 local fileList = {dirs={},files={}}
 local x , y = term.getSize()
 
@@ -158,7 +159,7 @@ function parseInput( user, repo , dldir, path, branch )
         end
 end
 
--- Clean the file space for everything except startup.Language
+-- Clean the file space for everything except refresh.Language
 function rmExcept(exception)
   files=fs.list(".")
   for i = 1, #files do
@@ -177,8 +178,8 @@ end
 -- Import Code From Github
 parseInput( gUser, gRepo, nil, nil, branch)
 
--- Remove the startup.lua script, copy contents of dl directory, and rm downloads
-if fs.exists("downloads/"..gRepo.."/startup.lua") then
+-- Remove the refresh.lua script, copy contents of dl directory, and rm downloads
+if fs.exists("downloads/"..gRepo.."/refresh.lua") then
   print("Sync Complete...Cleaning the file space")
   rmExcept("downloads")
   print("Moving files from downloaded gitHub folder to root")
