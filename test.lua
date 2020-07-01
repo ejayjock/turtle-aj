@@ -2,7 +2,7 @@ print("how Deep")
 nDeeep=io.read()
 nDeeep=tonumber(nDeeep)
 
-print("test line")
+print("I'm digging a mine")
 
 for j=1,20 do
 
