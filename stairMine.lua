@@ -11,12 +11,12 @@ Series of turtle commands:
 
 
 for i=1,5 do
-  turtle.digup()
-  turtle.up()
-  turtle.digup()
-  turtle.down()
-  turtle.digDown()
-  turtle.down()
-  turtle.dig()
-  turtle.forward()
+  turtle.DigUp()
+  turtle.Up()
+  turtle.DigUp()
+  turtle.Down()
+  turtle.dDigDown()
+  turtle.Down()
+  turtle.Dig()
+  turtle.Forward()
 end
