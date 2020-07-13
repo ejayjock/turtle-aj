@@ -14,7 +14,7 @@ for i=1,5 do
   turtle.digUp()
   turtle.up()
   turtle.digUp()
-  turtle.Down()
+  turtle.down()
   turtle.digDown()
   turtle.down()
   turtle.dig()
