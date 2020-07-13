@@ -12,7 +12,7 @@ Series of turtle commands:
 
 for i=1,5 do
   turtle.digUp()
-  turtle.dp()
+  turtle.up()
   turtle.digUp()
   turtle.Down()
   turtle.digDown()
