@@ -10,7 +10,7 @@ Series of turtle commands:
   - move forward ]]
 
 
-for i=1,5 do
+for i=1,45 do
   cont=true
   while cont do
     if turtle.detectUp() then
