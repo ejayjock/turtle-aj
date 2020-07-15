@@ -14,7 +14,7 @@ for i=1,5 do
   cont=true
   while cont do
  if turtle.detectUp()
-  turtle.digUp()
+turtle.digUp()
 else
   cont=false
   --turtle.digup
