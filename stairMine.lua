@@ -13,32 +13,35 @@ Series of turtle commands:
 for i=1,5 do
   cont=true
   while cont do
- if turtle.detectUp()
-turtle.digUp()
-else
-  cont=false
-  --turtle.digup
+    if turtle.detectUp() then
+      turtle.digUp()
+    else
+      cont=false
+    end
   end
-  end
-  for i=1,5 do
     cont=true
-    while cont do
-   if turtle.detectUp()
-    turtle.digUp()
-  else
-    cont=false
+  while cont do
+   if turtle.detectUp() then
+     turtle.digUp()
+   else
+      cont=false
+    end
+  end
+
   --turtle.digUp()
   turtle.up()
   turtle.down()
   turtle.digDown()
   turtle.down()
-  for i=1,5 do
-    cont=true
-    while cont do
-   if turtle.detect()
+
+  cont=true
+  while cont do
+   if turtle.detect() then
     turtle.dig()
   else
     cont=false
+  end
+ end
   --turtle.dig()
   turtle.forward()
 end
