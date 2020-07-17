@@ -21,18 +21,8 @@ function clearUp()
   end
 end
 
-
-function
-
-
-
-
-
-
-
-
-
-
+for i=1,5 do
+  --turtle.digUp  or the big while Loop
 
   turtle.up()
   turtle.down()
