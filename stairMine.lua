@@ -36,7 +36,7 @@ end
 for i=1,5 do
   clearUp()
   turtle.up()
-  turtle.clearUp()
+  clearUp()
   turtle.down()
   turtle.digDown()
   turtle.down()
