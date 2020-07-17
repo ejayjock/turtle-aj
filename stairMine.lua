@@ -34,12 +34,12 @@ function clear()
 end
 
 for i=1,5 do
-  turtle.clearUp()
+  clearUp()
   turtle.up()
   turtle.clearUp()
   turtle.down()
   turtle.digDown()
   turtle.down()
-  turtle.clear()
+  clear()
   turtle.forward()
 end
