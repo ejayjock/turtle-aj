@@ -21,12 +21,25 @@ function clearUp()
   end
 end
 
-for i=1,5 do
-  --turtle.digUp  or the big while Loop
 
+function clear()
+  cont=true
+  while cont do
+    if turtle.detect() then
+      turtle.dig()
+    else
+      cont=false
+    end
+  end
+end
+
+for i=1,5 do
+  turtle.clearUp()
   turtle.up()
+  turtle.clearUp()
   turtle.down()
   turtle.digDown()
   turtle.down()
+  turtle.clear()
   turtle.forward()
 end
