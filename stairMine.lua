@@ -10,7 +10,7 @@ Series of turtle commands:
   - move forward ]]
 
 
-for i=1,10 do
+function clearUp()
   cont=true
   while cont do
     if turtle.detectUp() then
@@ -19,29 +19,24 @@ for i=1,10 do
       cont=false
     end
   end
-    cont=true
-  while cont do
-   if turtle.detectUp() then
-     turtle.digUp()
-   else
-      cont=false
-    end
-  end
+end
 
-  --turtle.digUp()
+
+function
+
+
+
+
+
+
+
+
+
+
+
   turtle.up()
   turtle.down()
   turtle.digDown()
   turtle.down()
-
-  cont=true
-  while cont do
-   if turtle.detect() then
-    turtle.dig()
-  else
-    cont=false
-  end
- end
-  --turtle.dig()
   turtle.forward()
 end
