@@ -35,10 +35,10 @@ end
 
 -- Ask how deep the mine shoud be
 print("How deep?")
-nDeeep=tonunmber(io.read())
+nDeeep=tonumber(io.read())
 
 print("Which Slot has filler material?")
-nSlot=tonunmber(io.read())
+nSlot=tonumber(io.read())
 
 for i=1,nDeeep do
   clearUp()
