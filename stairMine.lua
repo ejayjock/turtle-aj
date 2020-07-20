@@ -40,6 +40,9 @@ for i=1,5 do
   turtle.down()
   turtle.digDown()
   turtle.down()
+  if not turtle.detectdown()  then
+  turtle.select(16)
+  turtle.placedown()
   clear()
   turtle.forward()
 end
