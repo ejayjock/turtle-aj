@@ -21,7 +21,7 @@ function clearUp()
   end
 end
 
-
+ 
 function clear()
   cont=true
   while cont do
@@ -45,4 +45,4 @@ for i=1,5 do
   turtle.placedown()
   clear()
   turtle.forward()
- end
+end
