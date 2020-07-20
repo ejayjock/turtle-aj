@@ -33,7 +33,14 @@ function clear()
   end
 end
 
-for i=1,5 do
+-- Ask how deep the mine shoud be
+print("How deep?")
+nDeeep=tonunmber(io.read())
+
+print("Which Slot has filler material?")
+nSlot=tonunmber(io.read())
+
+for i=1,nDeeep do
   clearUp()
   turtle.up()
   clearUp()
@@ -41,7 +48,7 @@ for i=1,5 do
   turtle.digDown()
   turtle.down()
   if not turtle.detectDown()  then
-    turtle.select(16)
+    turtle.select(nSlot)
     turtle.placeDown()
   end
   clear()
