@@ -43,6 +43,7 @@ for i=1,5 do
   if not turtle.detectdown()  then
     turtle.select(16)
     turtle.placedown()
+  end 
   clear()
   turtle.forward()
 end
