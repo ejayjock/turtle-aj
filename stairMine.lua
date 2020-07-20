@@ -21,7 +21,7 @@ function clearUp()
   end
 end
 
- 
+
 function clear()
   cont=true
   while cont do
@@ -41,8 +41,8 @@ for i=1,5 do
   turtle.digDown()
   turtle.down()
   if not turtle.detectdown()  then
-  turtle.select(16)
-  turtle.placedown()
+    turtle.select(16)
+    turtle.placedown()
   clear()
   turtle.forward()
 end
