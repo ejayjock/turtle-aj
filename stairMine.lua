@@ -10,6 +10,7 @@ Series of turtle commands:
   - move forward ]]
 
 
+
 function clearUp()
   cont=true
   while cont do
