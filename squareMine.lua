@@ -21,8 +21,13 @@ function clear()
 end
 
 function isodd(numb)
-
-
+  -- Will return true if numb is odd, and false if it is even.
+  tst=math.fmod(numb,2)
+  if tst==1
+    return true
+  else
+    return false
+  end
 end
 
 turnRight=true
@@ -39,7 +44,7 @@ for j=1,10 do
   else
     turtle.turnLeft()
   end
-  
+
   clearUp()
   clear()
   turtle.digDown()
