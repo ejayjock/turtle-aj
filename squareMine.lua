@@ -22,15 +22,15 @@ end
 
 for j=1,10 do
  for i=1,10 do
-  clearUp()
-  clear()
-  turtle.digDown()
-  turtle.forward()
+clearUp()
+clear()
+turtle.digDown()
+turtle.forward()
  end
- turtle.right()
- clearUp()
- clear()
- turtle.digDown()
- turtle.forward()
- turtle.right()
+turtle.turnRight()
+clearUp()
+clear()
+turtle.digDown()
+turtle.forward()
+turtle.turnRight()
 end
