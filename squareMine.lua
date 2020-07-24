@@ -41,7 +41,6 @@ function isodd(numb)
   end
 end
 
-turnRight=true
 for j=1,10 do
   for i=1,10I do
     clearUp()
@@ -50,7 +49,7 @@ for j=1,10 do
     turtle.forward()
   end
 
-  if turnRight then
+  if isodd(j) then
     turtle.turnRight()
   else
     turtle.turnLeft()
@@ -61,12 +60,11 @@ for j=1,10 do
   turtle.digDown()
   turtle.forward()
   nocobblestone()
-  
-  if turnRight then
+
+  if isodd(j) then
     turtle.turnRight()
-    turnRight=false
   else
     turtle.turnLeft()
-    turnRight=true
   end
+
 end
