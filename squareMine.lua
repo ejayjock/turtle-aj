@@ -1,3 +1,5 @@
+function nocobblestone()
+
 function clearUp()
   cont=true
   while cont do
