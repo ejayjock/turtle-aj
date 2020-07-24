@@ -1,6 +1,6 @@
 function nocobblestone
   turtle.getItemDetail(1)
-  if 
+  if
 end
 function clearUp()
   cont=true
@@ -12,7 +12,7 @@ function clearUp()
     end
   end
 end
-
+ 
 function clear()
   cont=true
   while cont do
