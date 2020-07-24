@@ -34,7 +34,7 @@ end
 function isodd(numb)
   -- Will return true if numb is odd, and false if it is even.
   tst=math.fmod(numb,2)
-  if tst==1
+  if tst==1 then
     return true
   else
     return false
