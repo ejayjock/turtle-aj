@@ -1,11 +1,14 @@
 function nocobblestone()
   cob="minecraft:cobblestone"
+  local item
   for i=1,16 do
-    local iitem=turtle.getItemDetail(i)
-    if iitem.name==cob then
-      turtle.select(i)
-      turtle.drop()
-    end
+      item==turtle.getItemDetail(i)
+      if not turtle.getItemCount(i)==0 then
+        if item.name==cob then
+          turtle.select(i)
+          turtle.drop()
+        end
+      end
   end
 end
 
