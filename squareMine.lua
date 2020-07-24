@@ -42,7 +42,7 @@ function isodd(numb)
 end
 
 for j=1,10 do
-  for i=1,10I do
+  for i=1,10 do
     clearUp()
     clear()
     turtle.digDown()
