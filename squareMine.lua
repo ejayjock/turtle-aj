@@ -1,7 +1,14 @@
-function nocobblestone
-  turtle.getItemDetail(1)
-  if
+function nocobblestone()
+  cob="minecraft:cobblestone"
+  for i=1,16 do
+    item=turtle.getItemDetail(i)
+    if item.name==cob then
+      turtle.select(i)
+      turtle.drop()
+    end
+  end
 end
+
 function clearUp()
   cont=true
   while cont do
@@ -12,7 +19,7 @@ function clearUp()
     end
   end
 end
- 
+
 function clear()
   cont=true
   while cont do
