@@ -1,5 +1,7 @@
-function nocobblestone()
-
+function nocobblestone
+  turtle.getItemDetail(1)
+  if 
+end
 function clearUp()
   cont=true
   while cont do
@@ -34,7 +36,7 @@ end
 
 turnRight=true
 for j=1,10 do
-  for i=1,10 do
+  for i=1,10I do
     clearUp()
     clear()
     turtle.digDown()
