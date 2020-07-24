@@ -3,7 +3,7 @@ function nocobblestone()
   local item
   for i=1,16 do
       item=turtle.getItemDetail(i)
-      if not turtle.getItemCount(i)==0 then
+      if not(turtle.getItemCount(i)==0) then
         if item.name==cob then
           turtle.select(i)
           turtle.drop()
