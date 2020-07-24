@@ -60,7 +60,8 @@ for j=1,10 do
   clear()
   turtle.digDown()
   turtle.forward()
-
+  nocobblestone()
+  
   if turnRight then
     turtle.turnRight()
     turnRight=false
