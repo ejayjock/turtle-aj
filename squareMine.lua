@@ -74,7 +74,7 @@ for j=1,sqaresize do
 
 end
 
-turtle.turnRight()
+turtle.turnLeft()
 for k=1,sqaresize+1 do
   turtle.forward()
 end
