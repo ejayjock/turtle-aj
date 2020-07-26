@@ -44,8 +44,10 @@ function isodd(numb)
   end
 end
 
-for j=1,10 do
-  for i=1,10 do
+local sqaresize=10
+
+for j=1,sqaresize do
+  for i=1,sqaresize do
     clearUp()
     clear()
     turtle.digDown()
@@ -70,4 +72,9 @@ for j=1,10 do
     turtle.turnLeft()
   end
 
+end
+
+turtle.turnRight()
+for k=1,sqaresize+1 do
+  turtle.forward()
 end
