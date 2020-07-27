@@ -1,3 +1,9 @@
+print("How deep?")
+local nDeeep=tonumber(io.read())
+
+print("how many blocks on a side?")
+local sqaresize=tonumber(io.read())
+
 function nocobblestone()
   cob="minecraft:cobblestone"
   local item
@@ -44,8 +50,12 @@ function isodd(numb)
   end
 end
 
-local sqaresize=10
-
+-- turtle goes down nDeeep levels
+for v=1,nDeeep do
+  turtle.digDown()
+  turtle.down()
+end
+-- turtle mines out the square
 for j=1,sqaresize do
   for i=1,sqaresize do
     clearUp()
@@ -71,10 +81,15 @@ for j=1,sqaresize do
   else
     turtle.turnLeft()
   end
-
 end
 
+-- turtle goes back to starting point
 turtle.turnLeft()
 for k=1,sqaresize+1 do
   turtle.forward()
+end
+
+-- turtle goes back up.
+for o=1,nDeeep do
+  turtle.up()
 end
