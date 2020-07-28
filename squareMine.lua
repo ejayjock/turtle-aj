@@ -14,8 +14,8 @@ function nojunk()
   local dump=false
   local item
   for i=1,16 do
-      item=turtle.getItemDetail(i)
       if not(turtle.getItemCount(i)==0) then
+        item=turtle.getItemDetail(i)
         dump=(item.name==cob or item.name==stone or item.name==dirt or item.name==gravel or item.name==sand or item.name==sandstone)
         if dump then
           turtle.select(i)
@@ -95,7 +95,7 @@ for j=1,sqaresize do
   clear()
   turtle.digDown()
   turtle.forward()
-  nocobblestone()
+  nojunk()
 
   if isodd(j) then
     turtle.turnRight()
