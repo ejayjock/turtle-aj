@@ -91,5 +91,6 @@ end
 
 -- turtle goes back up.
 for o=1,nDeeep do
+  turtle.digUp()
   turtle.up()
 end
