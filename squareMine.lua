@@ -4,6 +4,27 @@ local nDeeep=tonumber(io.read())
 print("how many blocks on a side?")
 local sqaresize=tonumber(io.read())
 
+function nojunk()
+  local cob="minecraft:cobblestone"
+  local stone="minecraft:stone"
+  local dirt="minecraft:dirt"
+  local gravel="minecraft:gravel"
+  local sand="minecraft:sand"
+  local sandstone="minecraft:sandstone"
+  local dump=false
+  local item
+  for i=1,16 do
+      item=turtle.getItemDetail(i)
+      if not(turtle.getItemCount(i)==0) then
+        dump=(item.name==cob or item.name==stone or item.name==dirt or item.name==gravel or item.name==sand or item.name==sandstone)
+        if dump then
+          turtle.select(i)
+          turtle.drop()
+        end
+      end
+  end
+end
+
 function nocobblestone()
   cob="minecraft:cobblestone"
   local item
